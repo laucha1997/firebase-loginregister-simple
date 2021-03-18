@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Login</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form id="login" action="login">
+    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
+    <label for="inputEmail" class="visually-hidden">Email address</label>
+    <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="visually-hidden">Password</label>
+    <input type="password" id="pass" class="form-control" placeholder="Password" required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <div id="alert"></div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+    <a href="..\register\register.html" class="w-100 btn btn-lg btn-secondary">Register</a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
+  <!-- -------------------------------------------BOOTSTRAP------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+  <!-- -------------------------------------------FIREBASE------------------------------------------->
+  
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <!--En esta parte pegar todo lo que seria la CDN completa de Firebase-->
+  <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyC8uJL1msnnZb-5AKa-7AMyLStvOVPPiak",
+    authDomain: "login-register-app-tivadar.firebaseapp.com",
+    projectId: "login-register-app-tivadar",
+    storageBucket: "login-register-app-tivadar.appspot.com",
+    messagingSenderId: "88919594356",
+    appId: "1:88919594356:web:ea70f807a49cc321a20821"
+  };
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  
+  <!-- -------------------------------------------SCRIPTS PROPIOS------------------------------------------->
+  <script src="..\login\login.js"></script>
+
+    
+  </body>
+</html>

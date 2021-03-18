@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+</head>
+<body>
+<main>
+    <div id="dash">
+    </div>
+    <div>
+        <button id="logout" class="btn btn-success">logout</button>
+    </div>
+</main>
+<!-- -------------------------------------------BOOTSTRAP------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+<!-- -------------------------------------------FIREBASE------------------------------------------->
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+<!--En esta parte pegar todo lo que seria la CDN completa de Firebase-->
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyC8uJL1msnnZb-5AKa-7AMyLStvOVPPiak",
+    authDomain: "login-register-app-tivadar.firebaseapp.com",
+    projectId: "login-register-app-tivadar",
+    storageBucket: "login-register-app-tivadar.appspot.com",
+    messagingSenderId: "88919594356",
+    appId: "1:88919594356:web:ea70f807a49cc321a20821"
+};
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<!-- -------------------------------------------SCRIPTS PROPIOS------------------------------------------->
+<script src="..\app\dash.js"></script>
+
+</body>
+</html>
